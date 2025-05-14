@@ -16,6 +16,7 @@ public abstract class Puzzle {
     }
 
 // Getters
+
     public String getIdPuzzle() {
         return idPuzzle;
     }
