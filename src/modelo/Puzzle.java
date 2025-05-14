@@ -7,7 +7,7 @@ public abstract class Puzzle {
     private int puntos;
     private boolean resuelto;
 
-    // Constructor
+// Constructor
     public Puzzle(String idPuzzle, String enunciado, int puntos, boolean resuelto) {
         this.idPuzzle = idPuzzle;
         this.enunciado = enunciado;
@@ -15,7 +15,7 @@ public abstract class Puzzle {
         this.resuelto = resuelto;
     }
 
-    // Getters
+// Getters
     public String getIdPuzzle() {
         return idPuzzle;
     }
@@ -32,7 +32,7 @@ public abstract class Puzzle {
         return resuelto;
     }
 
-    // Setters
+// Setters
     public void setIdPuzzle(String idPuzzle) {
         this.idPuzzle = idPuzzle;
     }
@@ -48,12 +48,13 @@ public abstract class Puzzle {
     public void setResuelto(boolean resuelto) {
         this.resuelto = resuelto;
     }
-    //Métodos
+
+//Métodos
     public abstract boolean intentarResolver(Scanner scanner);
 
     @Override
     public String toString() {
-        return "Descripción: " + enunciado + "\nPuntos: " + puntos;
+        return "Descripción: " + enunciado + ", puntos: " + puntos;
     }
 
 }
