@@ -12,7 +12,7 @@ public abstract class Puzzle {
         this.idPuzzle = idPuzzle;
         this.enunciado = enunciado;
         this.puntos = puntos;
-        this.resuelto = resuelto;
+        this.resuelto = false;
     }
 
 // Getters
